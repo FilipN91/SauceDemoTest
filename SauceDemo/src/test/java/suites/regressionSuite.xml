@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Regression" parallel="true" thread-count="8">
+    <test name = "RegressionTest">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="testWithLogin.LogoutTest"></class>
+            <class name="test.LoginTest"></class>
+            <class name="test.FailedLoginTest"></class>
+            <class name="testWithLogin.RemoveItemFromTheCartTest"></class>
+            <class name="testWithLogin.SuccessfulBoughtItemTest"></class>
+            <class name="testWithLogin.SelectRandomProductsTest"></class>
+        </classes>
+    </test>
+</suite>
